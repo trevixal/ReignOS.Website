@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReignOS</title>
-    <link rel="icon" href="./images/favicon.ico" />
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -17,7 +17,7 @@
 
     <!-- Header Section -->
     <header>
-      <img src="./images/ReignOS.png" alt="ReignOS Logo" />
+      <img src="images/ReignOS.png" alt="ReignOS Logo" />
 
       <a href="https://github.com/reignstudios/ReignOS/releases/latest">
         <button id="latest-version">...</button>
@@ -33,25 +33,25 @@
       <div class="icons">
         <div class="icon-link">
           <a href="#" target="_blank">
-            <img src="./images/25x25.svg" alt="GitHub" />
+            <img src="images/25x25.svg" alt="GitHub" />
           </a>
           <span>GitHub</span>
         </div>
         <div class="icon-link">
           <a href="#" target="_blank">
-            <img src="./images/25x25.svg" alt="Discord" />
+            <img src="images/25x25.svg" alt="Discord" />
           </a>
           <span>Discord</span>
         </div>
         <div class="icon-link">
           <a href="http://reign-studios.com/ReignOS/" target="_blank">
-            <img src="./images/25x25.svg" alt="ReignOS Website" />
+            <img src="images/25x25.svg" alt="ReignOS Website" />
           </a>
           <span>Website</span>
         </div>
         <div class="icon-link">
           <a href="https://github.com/reignstudios/ReignOS.ISO" target="_blank">
-            <img src="./images/25x25.svg" alt="ISO Builder" />
+            <img src="images/25x25.svg" alt="ISO Builder" />
           </a>
           <span>ISO Builder</span>
         </div>
@@ -62,9 +62,9 @@
       <!-- About loaded dinamically here from GitHub -->
     </div>
 
-    <script src="./js/getLatestReleaseVersion.js"></script>
-    <script src="./js/getSection/About.js"></script>
-    <script src="./js/getSection/ConfirmedWorkingHardware.js"></script>
+    <script src="js/getLatestReleaseVersion.js"></script>
+    <script src="js/getSection/About.js"></script>
+    <script src="js/getSection/ConfirmedWorkingHardware.js"></script>
     <script>
       getLatestReleaseVersion().then((version) => {
         document.getElementById("latest-version").textContent =
