@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReignOS</title>
+    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="documentation.html">Documentation</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+      <img src="/images/ReignOS.png" alt="ReignOS Logo" />
+
+      <a href="https://github.com/reignstudios/ReignOS/releases/latest">
+        <button id="latest-version">...</button>
+      </a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about-section">
+      <h2>About</h2>
+      <div id="about-content">Loading...</div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation-section">
+      <h2>Installation</h2>
+      <div id="installation-content">Loading...</div>
+    </section>
+
+    <!-- Compatibility Section -->
+    <section id="compatibility-section">
+      <h2>Compatibility</h2>
+      <div id="compatibility-content">Loading...</div>
+    </section>
+
+    <script src="/js/getLatestReleaseVersion.js"></script>
+    <script src="/js/getAboutContent.js"></script>
+    <script src="/js/getInstallationContent.js"></script>
+    <script src="/js/getCompatibilityContent.js"></script>
+    <script>
+      getLatestReleaseVersion().then((version) => {
+        document.getElementById("latest-version").textContent =
+          "Download " + version;
+      });
+
+      window.getAboutContent().then((content) => {
+        document.getElementById("about-content").innerHTML = content;
+      });
+      window.getInstallationContent().then((content) => {
+        document.getElementById("installation-content").innerHTML = content;
+      });
+      window.getCompatibilityContent().then((content) => {
+        document.getElementById("compatibility-content").innerHTML = content;
+      });
+    </script>
+  </body>
+</html>

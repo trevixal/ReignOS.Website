@@ -1,0 +1,72 @@
+header {
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header img {
+  border-radius: 5px;
+}
+
+header a {
+  place-self: center;
+  max-width: fit-content;
+}
+
+header button {
+  background: #29e678;
+  background: linear-gradient(
+    90deg,
+    rgba(41, 230, 120, 1) 0%,
+    rgba(87, 199, 133, 1) 50%
+  );
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header button:hover {
+  background: #1f9c5a;
+  background: linear-gradient(
+    90deg,
+    rgba(41, 230, 120, 1) 25%,
+    rgba(87, 199, 133, 1) 75%
+  );
+}
+
+.socials {
+  display: grid;
+  justify-content: center;
+  border-top: 2px solid #ccc;
+}
+
+.socials .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.socials img {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: transform 0.3s ease;
+}
+.socials a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.get-cwh-section h2 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #1f9c5a;
+}

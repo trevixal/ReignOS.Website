@@ -1,0 +1,4 @@
+.gitignore
+.vscode
+.old_files
+*.log

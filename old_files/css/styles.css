@@ -1,0 +1,46 @@
+body {
+  background-color: #001a2d;
+  color: #f4f8fb;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #012040;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: #b8e0ff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.download-btn {
+  background: linear-gradient(90deg, #2ecc40 0%, #27ae60 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(46, 204, 64, 0.15);
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 1.5rem;
+}
+
+.download-btn:hover {
+  background: linear-gradient(90deg, #27ae60 0%, #2ecc40 100%);
+  transform: translateY(-2px) scale(1.03);
+}

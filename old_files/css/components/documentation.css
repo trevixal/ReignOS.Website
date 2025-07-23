@@ -1,0 +1,217 @@
+.documentation {
+  padding: 8rem 0 4rem;
+  background: var(--bg-primary);
+  min-height: 100vh;
+}
+
+.doc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.doc-sidebar {
+  position: sticky;
+  top: 6rem;
+  height: calc(100vh - 8rem);
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.doc-sidebar h3 {
+  color: var(--accent);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.doc-nav {
+  list-style: none;
+}
+
+.doc-nav li {
+  margin-bottom: 0.5rem;
+}
+
+.doc-nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-secondary);
+  border-radius: 4px;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.doc-nav a:hover,
+.doc-nav a.active {
+  color: var(--accent);
+  background: rgba(100, 255, 218, 0.1);
+}
+
+.doc-content {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.doc-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.doc-content h2 {
+  font-size: 1.75rem;
+  margin: 3rem 0 1.5rem;
+  color: var(--text-primary);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.doc-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.doc-content h3 {
+  font-size: 1.375rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--text-primary);
+}
+
+.doc-content p,
+.doc-content ul,
+.doc-content ol {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.doc-content ul,
+.doc-content ol {
+  padding-left: 1.5rem;
+}
+
+.doc-content li {
+  margin-bottom: 0.75rem;
+}
+
+.doc-content code {
+  background: rgba(100, 255, 218, 0.1);
+  color: var(--accent);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.doc-content pre {
+  background: #0a192f;
+  border-radius: 6px;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.doc-content pre code {
+  background: transparent;
+  padding: 0;
+  color: #e6f1ff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.doc-content blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+  background: rgba(100, 255, 218, 0.05);
+  border-radius: 0 4px 4px 0;
+}
+
+.doc-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.doc-content th,
+.doc-content td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.doc-content th {
+  background: rgba(100, 255, 218, 0.1);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.doc-content tr:nth-child(even) {
+  background: rgba(100, 255, 218, 0.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .doc-container {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+  }
+  
+  .doc-sidebar {
+    position: static;
+    height: auto;
+    margin-bottom: 2rem;
+    padding-right: 0;
+  }
+  
+  .doc-content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .documentation {
+    padding: 6rem 0 2rem;
+  }
+  
+  .doc-content {
+    padding: 1.5rem;
+  }
+  
+  .doc-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .doc-content h2 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1.25rem;
+  }
+  
+  .doc-content h3 {
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem;
+  }
+}

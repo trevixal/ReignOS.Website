@@ -1,0 +1,10 @@
+.doc-main {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #012040;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  color: #f4f8fb;
+  min-height: 400px;
+}
